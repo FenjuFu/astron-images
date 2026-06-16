@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace">
+<rect width="1000" height="620" fill="#ffffff"/>
+<text x="500" y="34" text-anchor="middle" font-size="22" font-weight="bold" fill="#6A3FD0">Astron 交流群 Top 10 活跃贡献者 (Top 10 Active Contributors) - 6.1-6.14</text>
+<!-- 轴 -->
+<line x1="72" y1="72" x2="72" y2="500" stroke="#6A3FD0" stroke-width="1.5"/>
+<line x1="72" y1="500" x2="972" y2="500" stroke="#6A3FD0" stroke-width="1.5"/>
+<text x="22" y="286" text-anchor="middle" font-size="15" fill="#6A3FD0" transform="rotate(-90 22 286)">消息数量 (Message Count)</text>
+<text x="522" y="602" text-anchor="middle" font-size="15" fill="#6A3FD0">成员昵称 (Member Nickname)</text>
+<text x="62" y="504" text-anchor="end" font-size="13" fill="#6A3FD0">0</text>
+<text x="62" y="432.6666666666667" text-anchor="end" font-size="13" fill="#6A3FD0">20</text>
+<line x1="72" y1="428.6666666666667" x2="972" y2="428.6666666666667" stroke="#6A3FD0" stroke-opacity="0.08"/>
+<text x="62" y="361.33333333333337" text-anchor="end" font-size="13" fill="#6A3FD0">40</text>
+<line x1="72" y1="357.33333333333337" x2="972" y2="357.33333333333337" stroke="#6A3FD0" stroke-opacity="0.08"/>
+<text x="62" y="290" text-anchor="end" font-size="13" fill="#6A3FD0">60</text>
+<line x1="72" y1="286" x2="972" y2="286" stroke="#6A3FD0" stroke-opacity="0.08"/>
+<text x="62" y="218.66666666666669" text-anchor="end" font-size="13" fill="#6A3FD0">80</text>
+<line x1="72" y1="214.66666666666669" x2="972" y2="214.66666666666669" stroke="#6A3FD0" stroke-opacity="0.08"/>
+<text x="62" y="147.33333333333331" text-anchor="end" font-size="13" fill="#6A3FD0">100</text>
+<line x1="72" y1="143.33333333333331" x2="972" y2="143.33333333333331" stroke="#6A3FD0" stroke-opacity="0.08"/>
+<text x="62" y="76" text-anchor="end" font-size="13" fill="#6A3FD0">120</text>
+<line x1="72" y1="72" x2="972" y2="72" stroke="#6A3FD0" stroke-opacity="0.08"/>
+<rect x="90.0" y="125.5" width="54.0" height="374.5" fill="#F6A623"/>
+<text x="117.0" y="117.5" text-anchor="middle" font-size="14" fill="#6A3FD0">105</text>
+<text x="117.0" y="522" text-anchor="end" font-size="14" fill="#6A3FD0" transform="rotate(-40 117.0 522)">A*菊</text>
+<rect x="180.0" y="239.6" width="54.0" height="260.4" fill="#F6A623"/>
+<text x="207.0" y="231.6" text-anchor="middle" font-size="14" fill="#6A3FD0">73</text>
+<text x="207.0" y="522" text-anchor="end" font-size="14" fill="#6A3FD0" transform="rotate(-40 207.0 522)">曹*兵</text>
+<rect x="270.0" y="275.3" width="54.0" height="224.7" fill="#F6A623"/>
+<text x="297.0" y="267.3" text-anchor="middle" font-size="14" fill="#6A3FD0">63</text>
+<text x="297.0" y="522" text-anchor="end" font-size="14" fill="#6A3FD0" transform="rotate(-40 297.0 522)">艺*行</text>
+<rect x="360.0" y="289.6" width="54.0" height="210.4" fill="#F6A623"/>
+<text x="387.0" y="281.6" text-anchor="middle" font-size="14" fill="#6A3FD0">59</text>
+<text x="387.0" y="522" text-anchor="end" font-size="14" fill="#6A3FD0" transform="rotate(-40 387.0 522)">陆*钢</text>
+<rect x="450.0" y="296.7" width="54.0" height="203.3" fill="#F6A623"/>
+<text x="477.0" y="288.7" text-anchor="middle" font-size="14" fill="#6A3FD0">57</text>
+<text x="477.0" y="522" text-anchor="end" font-size="14" fill="#6A3FD0" transform="rotate(-40 477.0 522)">陈*年</text>
+<rect x="540.0" y="300.3" width="54.0" height="199.7" fill="#F6A623"/>
+<text x="567.0" y="292.3" text-anchor="middle" font-size="14" fill="#6A3FD0">56</text>
+<text x="567.0" y="522" text-anchor="end" font-size="14" fill="#6A3FD0" transform="rotate(-40 567.0 522)">卢*俊</text>
+<rect x="630.0" y="307.4" width="54.0" height="192.6" fill="#F6A623"/>
+<text x="657.0" y="299.4" text-anchor="middle" font-size="14" fill="#6A3FD0">54</text>
+<text x="657.0" y="522" text-anchor="end" font-size="14" fill="#6A3FD0" transform="rotate(-40 657.0 522)">符*U</text>
+<rect x="720.0" y="371.6" width="54.0" height="128.4" fill="#F6A623"/>
+<text x="747.0" y="363.6" text-anchor="middle" font-size="14" fill="#6A3FD0">36</text>
+<text x="747.0" y="522" text-anchor="end" font-size="14" fill="#6A3FD0" transform="rotate(-40 747.0 522)">彭*政</text>
+<rect x="810.0" y="414.4" width="54.0" height="85.6" fill="#F6A623"/>
+<text x="837.0" y="406.4" text-anchor="middle" font-size="14" fill="#6A3FD0">24</text>
+<text x="837.0" y="522" text-anchor="end" font-size="14" fill="#6A3FD0" transform="rotate(-40 837.0 522)">周*道</text>
+<rect x="900.0" y="453.6" width="54.0" height="46.4" fill="#F6A623"/>
+<text x="927.0" y="445.6" text-anchor="middle" font-size="14" fill="#6A3FD0">13</text>
+<text x="927.0" y="522" text-anchor="end" font-size="14" fill="#6A3FD0" transform="rotate(-40 927.0 522)">S*r</text>
+</svg>

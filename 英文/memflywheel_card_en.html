@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MemFlywheel at a Glance</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    background: linear-gradient(180deg, #e0f2fe 0%, #bae6fd 40%, #7dd3fc 100%);
+    font-family: "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+    display: flex; justify-content: center; align-items: flex-start;
+    min-height: 100vh; padding: 30px 0;
+  }
+  .card {
+    width: 900px; height: 1200px;           /* 3:4 */
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(2, 132, 199, 0.25),
+                inset 0 0 30px rgba(255, 255, 255, 0.4);
+    color: #0f172a;
+    padding: 40px 48px 32px;
+    display: flex; flex-direction: column;
+    position: relative; overflow: hidden;
+  }
+  /* decorative glass bubbles */
+  .bubble {
+    position: absolute; border-radius: 50%; pointer-events: none; z-index: 0;
+    background: radial-gradient(circle at 30% 30%, rgba(255,255,255,.85), rgba(255,255,255,.08));
+    box-shadow: inset 0 0 20px rgba(255,255,255,.6), 0 8px 24px rgba(2,132,199,.12);
+    border: 1px solid rgba(255,255,255,.5);
+  }
+  .b1 { width: 180px; height: 180px; top: -60px; right: -50px; }
+  .b2 { width: 90px;  height: 90px;  top: 330px; right: -30px; }
+  .b3 { width: 130px; height: 130px; bottom: 260px; left: -55px; }
+  .b4 { width: 60px;  height: 60px;  bottom: -18px; right: 130px; }
+  .inner { position: relative; z-index: 1; display: flex; flex-direction: column; height: 100%; }
+
+  /* ---------- header ---------- */
+  .top-badges { display: flex; gap: 10px; align-items: center; margin-bottom: 16px; }
+  .badge {
+    font-size: 15px; font-weight: 700; letter-spacing: 1px;
+    padding: 5px 14px; border-radius: 999px;
+    background: rgba(255,255,255,.8); color: #0369a1;
+    border: 1px solid rgba(255,255,255,.9);
+    box-shadow: 0 2px 8px rgba(2,132,199,.12);
+  }
+  .badge.green { color: #0f766e; }
+  h1 {
+    font-size: 48px; font-weight: 900; letter-spacing: 1px; line-height: 1.15;
+    color: #0f172a; text-shadow: 0 0 10px rgba(255,255,255,.8);
+  }
+  h1 .en {
+    background: linear-gradient(92deg, #4f46e5 0%, #0284c7 60%, #0d9488 100%);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .slogan { margin-top: 10px; font-size: 18px; color: #075985; font-style: italic; }
+  .intro { margin-top: 12px; font-size: 20px; line-height: 1.5; color: #1e3a5f; }
+  .intro b { color: #4f46e5; font-weight: 800; }
+
+  /* ---------- section title ---------- */
+  .sec { margin-top: 20px; }
+  .sec-title { display: flex; align-items: center; gap: 10px; margin-bottom: 11px; }
+  .sec-title .bar { width: 6px; height: 22px; border-radius: 3px;
+    background: linear-gradient(180deg, #4f46e5, #0284c7); }
+  .sec-title span { font-size: 24px; font-weight: 800; letter-spacing: 1px; color: #0f172a;
+    text-shadow: 0 0 8px rgba(255,255,255,.7); }
+
+  /* ---------- features 2x2 : pastel glass tiles ---------- */
+  .feat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .feat {
+    border: 1px solid rgba(255,255,255,.8);
+    box-shadow: inset 0 0 15px rgba(255,255,255,.5), 0 4px 12px rgba(2,132,199,.1);
+    border-radius: 14px; padding: 12px 15px;
+  }
+  .feat.sky    { background: linear-gradient(135deg, rgba(224,242,254,.9), rgba(186,230,253,.75)); }
+  .feat.teal   { background: linear-gradient(135deg, rgba(204,251,241,.9), rgba(153,246,228,.75)); }
+  .feat.purple { background: linear-gradient(135deg, rgba(243,232,255,.9), rgba(233,213,255,.75)); }
+  .feat.green  { background: linear-gradient(135deg, rgba(220,252,231,.9), rgba(187,247,208,.75)); }
+  .feat .t { font-size: 18px; font-weight: 800; margin-bottom: 4px; letter-spacing: -0.5px; }
+  .feat.sky .t    { color: #075985; }
+  .feat.teal .t   { color: #115e59; }
+  .feat.purple .t { color: #581c87; }
+  .feat.green .t  { color: #14532d; }
+  .feat .d { font-size: 15px; line-height: 1.45; color: #334155; }
+
+  /* ---------- flywheel flow ---------- */
+  .flow { display: flex; align-items: stretch; gap: 0; }
+  .step {
+    flex: 1; text-align: center; padding: 12px 4px;
+    background: linear-gradient(135deg, rgba(224,231,255,.9), rgba(199,210,254,.7));
+    border: 1px solid rgba(255,255,255,.8);
+    box-shadow: inset 0 0 15px rgba(255,255,255,.5);
+    border-radius: 12px;
+  }
+  .step .n { font-size: 13px; color: #4f46e5; font-weight: 800; letter-spacing: 2px; }
+  .step .t { font-size: 17px; font-weight: 800; margin-top: 3px; color: #312e81; }
+  .step .d { font-size: 13px; color: #475569; margin-top: 4px; line-height: 1.35; }
+  .arrow { display: flex; align-items: center; padding: 0 6px; color: #4f46e5; font-size: 20px; }
+  .loopback {
+    margin-top: 10px; text-align: center; font-size: 15px; color: #0f766e;
+    font-weight: 600; letter-spacing: 1px;
+  }
+
+  /* ---------- quick start ---------- */
+  .code {
+    background: rgba(15, 23, 42, 0.88);
+    border: 1px solid rgba(255,255,255,.5);
+    box-shadow: 0 8px 20px rgba(2,132,199,.18);
+    border-radius: 14px; padding: 12px 18px;
+    font-family: "Cascadia Code", Consolas, monospace;
+    font-size: 16px; line-height: 1.75; color: #e2e8f0;
+  }
+  .code .c { color: #7dd3fc; opacity: .75; }
+  .code .cmd { color: #5eead4; }
+  .harness-line { margin-top: 8px; font-size: 14.5px; color: #334155; }
+  .harness-line b { color: #4f46e5; }
+  .harness-line code {
+    font-family: Consolas, monospace; font-size: 13.5px;
+    background: rgba(255,255,255,.7); border-radius: 6px; padding: 1px 6px; color: #0f172a;
+  }
+
+  /* ---------- open source ---------- */
+  .oss {
+    margin-top: auto;
+    background: rgba(255,255,255,.45);
+    border: 1px solid rgba(255,255,255,.85);
+    box-shadow: inset 0 0 20px rgba(255,255,255,.55), 0 8px 20px rgba(2,132,199,.12);
+    border-radius: 18px; padding: 16px 22px 13px;
+  }
+  .oss-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+  .oss-head .t { font-size: 23px; font-weight: 900; letter-spacing: 1px; color: #0f172a; }
+  .oss-head .t em { font-style: normal; color: #4f46e5; }
+  .lic { font-size: 14px; font-weight: 700; color: #0f766e;
+    background: rgba(255,255,255,.8); border: 1px solid rgba(255,255,255,.9);
+    border-radius: 999px; padding: 4px 12px; }
+  .repo { display: flex; align-items: center; gap: 12px; padding: 7px 0; }
+  .repo + .repo { border-top: 1px dashed rgba(2,132,199,.25); }
+  .logo { width: 34px; height: 34px; border-radius: 9px; display: flex;
+    align-items: center; justify-content: center; flex: none;
+    background: #fff; border: 1px solid rgba(255,255,255,.9);
+    box-shadow: 0 2px 8px rgba(2,132,199,.15); }
+  .logo.ag img { width: 22px; height: auto; display: block; }
+  .repo .name { font-size: 17px; font-weight: 800; width: 92px; flex: none; color: #0f172a; }
+  .repo .url { font-family: Consolas, monospace; font-size: 15.5px; color: #0369a1; }
+
+  .foot { margin-top: 12px; text-align: center; font-size: 14px; color: #075985;
+    font-weight: 600; letter-spacing: 2px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="bubble b1"></div><div class="bubble b2"></div>
+  <div class="bubble b3"></div><div class="bubble b4"></div>
+  <div class="inner">
+
+  <!-- header -->
+  <div class="top-badges">
+    <span class="badge">iFlytek Open Source</span>
+    <span class="badge green">Agent Memory Layer</span>
+  </div>
+  <h1><span class="en">MemFlywheel</span> at a Glance</h1>
+  <div class="slogan">"Turn every Agent run into a smarter start for the next one."</div>
+  <div class="intro">
+    A <b>file-native long-term memory layer</b> for AI agents: memories live as
+    inspectable, diff-able Markdown files — every run makes the next one smarter.
+  </div>
+
+  <!-- features -->
+  <div class="sec">
+    <div class="sec-title"><span class="bar"></span><span>Core Features</span></div>
+    <div class="feat-grid">
+      <div class="feat sky"><div class="t">📄 File-Native Storage</div>
+        <div class="d">Markdown memories, source traces &amp; learned skills — all inspectable and diff-able</div></div>
+      <div class="feat teal"><div class="t">🔍 Progressive Recall</div>
+        <div class="d">Recall upfront, then read in layers: from index hints down to evidence</div></div>
+      <div class="feat purple"><div class="t">🌙 Post-Run Learning</div>
+        <div class="d">End-of-turn extraction, plus idle-time "dream" consolidation &amp; repair</div></div>
+      <div class="feat green"><div class="t">🔌 Harness-Native</div>
+        <div class="d">Works out of the box with Pi / Hermes / OpenCode / OpenClaw</div></div>
+    </div>
+  </div>
+
+  <!-- flywheel -->
+  <div class="sec">
+    <div class="sec-title"><span class="bar"></span><span>How the Flywheel Spins</span></div>
+    <div class="flow">
+      <div class="step"><div class="n">01</div><div class="t">Pre-Recall</div>
+        <div class="d">Index hints from MEMORY.md</div></div>
+      <div class="arrow">➜</div>
+      <div class="step"><div class="n">02</div><div class="t">Layered Read</div>
+        <div class="d">Memory → traces → skills</div></div>
+      <div class="arrow">➜</div>
+      <div class="step"><div class="n">03</div><div class="t">Turn-End Extract</div>
+        <div class="d">Persist new memories</div></div>
+      <div class="arrow">➜</div>
+      <div class="step"><div class="n">04</div><div class="t">Idle Consolidate</div>
+        <div class="d">Dream consolidation &amp; repair</div></div>
+    </div>
+    <div class="loopback">↻ Repeated work settles into reusable learned skills — the flywheel spins faster</div>
+  </div>
+
+  <!-- quick start -->
+  <div class="sec">
+    <div class="sec-title"><span class="bar"></span><span>Up &amp; Running in 30s (Pi shown)</span></div>
+    <div class="code">
+      <span class="c"># one-line adapter install</span><br>
+      <span class="cmd">$ pi install npm:@iflytekopensource/adapters</span>
+    </div>
+    <div class="harness-line">
+      Other harnesses: <b>Hermes</b> → <code>memflywheel-hermes-install</code>　|
+      <b>OpenCode</b> → <code>opencode plugin @iflytekopensource/adapters</code>
+    </div>
+  </div>
+
+  <!-- open source -->
+  <div class="oss">
+    <div class="oss-head">
+      <div class="t">Co-build MemFlywheel <em>in the open</em> — join us!</div>
+      <div class="lic">Apache-2.0</div>
+    </div>
+    <div class="repo">
+      <div class="logo gh">
+        <svg width="21" height="21" viewBox="0 0 24 24" fill="#0f172a"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+      </div>
+      <div class="name">GitHub</div>
+      <div class="url">github.com/iflytek/memflywheel</div>
+    </div>
+    <div class="repo">
+      <div class="logo ag">
+        <img alt="AtomGit" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAA2CAYAAACWeYpTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUvSURBVGhD7ZppaFxVFMfHfbeiaG2Nc84LwSUgIsHSpu+cRzcQd6hFBEWx7p/cPlRERdQirbh+EL9YFRFRFES/NAYKFfWDxYYakzl3kgaqRRFRhOJWNXLeS9PJua+ZN/PeTDswP/iTMHlnuZN3t3NvqdSlSxeL6wvPrgR8eTWI1gnyXYmiO13A1wguv9T1LTnd2nQE4+cPLnYQ3euQ3nFI3zvk6fkkyP864BEH9LILeM10qXS09XnEsGNg4DgXhDcL8FZB+sc2phEJ0HcO6ZmJ3mXn2DiHDf32qxjd4pAnbcL5Rfsc8KbRnqVn2rhtZTzgSxzSTj/BYiVAP2r/tvFbznSpdJQAPyRAf9qkWikBfn+0PzrV5tMStpWiYx3QmzaJNmp4urTuGJtXoezpWXqSAH+cErytEqDbbG6Fkbyu9J4NWrSyjNgCNGTzKwyHvNEGLFIC/JsD2iBIt9q/eQIWm18hCPCVXrA5op8F+T//8yyifQL04oE5swLRRf4zRkDbbY650eWZAO/xgs0NfP9ksHJhJaA7HPInAvzTzOf7HXDFIX0oQM/qW6E/49+BNrggvFr7fW08nZcF6VcvRo0qwA/W2hSCA3rJBvJFj1m7POgiwY+RSJB37F00cLK1yYWuWQXpDxvME/Ama5uHkYVrTtHX049Dn46VaZF9Pjfad7xgaQLebG3zEr/CZbrKQfiAqgq8zD5TCFMQnRiPhLZRaQK+z9p3DK5Ma70GpQlov/SsPM/adwwO+F2vUamiD6xtR+GQ9/qN8iUBLbG2HcNk7/KybVCadJNtbfPg+q44YbS//3j7ecuoQHi9bVSaKkg3WtusVMs06IBe0/1s2qAnyL/rQkWQvtQFh1YcBKKbpBz2Wl9Nk9R7/IbZRJrZG45fOHiavgnWX0MCHtH9sL4B1n9DOOQnPOdGgrTN2mVBgJ60vpqVIE04DCMbIzMO6Tnr1EqQX7B2WdCNs/WVR7pyqyJdZ+NkwiE9bR1aCdLd1i4LSX/z/eWRlnS0fmVj1UWAH7XOrHRgsHZZqPRGYVzdS/GZR7rY1+KAjTcvrkzrrSOrKvK11i4rSYGbb9eRVIvcgvy5Q5rSAc7GaUwN9lddQPtO5korAdauCHQk/xZXgE4jE+VwoFIOV+k0Jkivx/vblFwO5sSvWn/zMtm7ekGGisHj1q7VuCC8ISWPmoY2MRMI0tfWkdGwtWkHAuRSckkEXLHP16XefKcj3RRE51q7VuOQxmwuBxtKn9nn66L9w3Pka6O1ayVjQXhBfPLm53FAW6xNJgTpixRns2p6/mqCuOIANGRzqJWu0a1dJrJtvmm8Hcd79VZrgvSDHl1au0zoGYcD2mWdegLaVeiuoobkrIdf8WJa5S3n6HaqTr+IFddiy7S+yAOgpE/O332SRtJXhcTVidhzfggJ0DcO6B6di62frMwMhFsc8N/Wv5We1ej9COujKbTOmmFenSvgv+L/BvBmXS4K8MV6aaN2Papfhq6C9N6CID0sQG855N2er3kkQI/MzTYnWl7Rk2cbqFFpN6h35JBVAvRRwwv5LGghrKgk80rfsCmIzrA5FoYDvmz2EOmwiXaOLV51ls2tcOLRUAcdL4E2CGh7W2+pJAdB/IaXSIukuyk9btR51ebSFiSIVuvqyCZWpAR5VEdmG7vt6NIrPpLPsopqTLuLXoQUQnyhA4n18LjuKfkhJMi/aJeoAq84ou8E1jIOEWoZxAE/NXM3aViLWLMCGhLktwX5eb1So/cXWjIvdunSpWP4H5GVs9s6hdurAAAAAElFTkSuQmCC">
+      </div>
+      <div class="name">AtomGit</div>
+      <div class="url">atomgit.com/ifly_opensource/memflywheel</div>
+    </div>
+    <div class="repo">
+      <div class="logo gt">
+        <svg width="21" height="21" viewBox="0 0 24 24" fill="#c71d23"><path d="M11.984 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm6.09 5.333c.328 0 .593.266.592.593v1.482a.594.594 0 0 1-.593.592H9.777c-.982 0-1.778.796-1.778 1.778v5.63c0 .327.266.592.593.592h5.63c.982 0 1.778-.796 1.778-1.778v-.296a.593.593 0 0 0-.592-.593h-4.15a.592.592 0 0 1-.592-.592v-1.482a.593.593 0 0 1 .593-.592h6.815c.327 0 .593.265.593.592v3.408a4 4 0 0 1-4 4H5.926a.593.593 0 0 1-.593-.593V9.778a4.444 4.444 0 0 1 4.445-4.444h8.296Z"/></svg>
+      </div>
+      <div class="name">Gitee</div>
+      <div class="url">gitee.com/iflytek/memflywheel</div>
+    </div>
+  </div>
+
+  <div class="foot">⭐ Star · 🐛 Issue · 🔀 PR — every contribution spins the flywheel faster</div>
+
+  </div>
+</div>
+</body>
+</html>

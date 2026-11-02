@@ -1,0 +1,12 @@
+﻿observed_date,platform,series_or_scope,metric,value,unit
+2026-10-31,Hugging Face,Spark-X2.5,official_cumulative_downloads,1322641,downloads
+2026-10-31,Hugging Face,Spark-X2.5,community_derivative_repositories,115,repositories
+2026-10-31,Hugging Face,Spark-X2.5,derivative_cumulative_downloads,2070599,downloads
+2026-10-31,Hugging Face,Spark-X2.6,official_cumulative_downloads,244188,downloads
+2026-10-31,Hugging Face,Spark-X2.6,community_derivative_repositories,108,repositories
+2026-10-31,Hugging Face,Spark-X2.6,derivative_cumulative_downloads,106197,downloads
+2026-10-31,Hugging Face,Spark-X2.5 + Spark-X2.6 official and derivatives,cumulative_downloads,3743625,downloads
+2026-10-31,Hugging Face,Spark-X2.6-4B-GGUF,cumulative_downloads,221044,downloads
+2026-10-31,Hugging Face,Spark-X2.6-4B,likes,925,likes
+2026-10-31,ModelScope,Spark-X2.6 six specified 4B variants,cumulative_downloads,2274,downloads
+2026-10-31,Ollama,Spark-X2.6-4B,cumulative_pulls,7711,pulls

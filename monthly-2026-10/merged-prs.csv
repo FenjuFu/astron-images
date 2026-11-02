@@ -1,0 +1,176 @@
+﻿repository,number,title,merged_at_utc,url
+XHToken/llama.cpp,19,model : add Spark2.5 DSpark draft support,2026-10-30T08:23:41Z,https://github.com/XHToken/llama.cpp/pull/19
+iflytek/skillhub,1041,docs(weekly): mirror 2026-W44 report,2026-10-30T06:49:12Z,https://github.com/iflytek/skillhub/pull/1041
+iflytek/skillhub,1040,fix(web): truncate pinned version column in suite detail tables,2026-10-31T11:59:44Z,https://github.com/iflytek/skillhub/pull/1040
+iflytek/skillhub,1038,fix(dsh): prepare 0.6.1 with deduplicated Host validation,2026-10-30T07:13:40Z,https://github.com/iflytek/skillhub/pull/1038
+iflytek/skillhub,1034,fix(auth): handle blank device verification URI configuration,2026-10-29T09:14:41Z,https://github.com/iflytek/skillhub/pull/1034
+iflytek/skillhub,1033,fix(dsh): preserve legacy state compatibility and prepare releases,2026-10-29T13:08:15Z,https://github.com/iflytek/skillhub/pull/1033
+iflytek/skillhub,1032,fix(dsh): simplify installed cards and restore skill summaries,2026-10-29T07:24:24Z,https://github.com/iflytek/skillhub/pull/1032
+iflytek/skillhub,1030,feat(dsh): add efficient installed skill update overview,2026-10-29T03:35:32Z,https://github.com/iflytek/skillhub/pull/1030
+XHToken/magpie,17,fix(product): integrate local fixes and prepare 0.1.0-beta.10,2026-10-28T10:45:19Z,https://github.com/XHToken/magpie/pull/17
+iflytek/skillhub,1028,docs: refresh bilingual guides and skill suite usage,2026-10-28T09:40:59Z,https://github.com/iflytek/skillhub/pull/1028
+iflytek/skillhub,1027,fix(scanner): accept integral scientific notation for upload limit,2026-10-28T08:13:47Z,https://github.com/iflytek/skillhub/pull/1027
+iflytek/skillhub,1025,feat(dsh): add installation activation and simplify skill management,2026-10-28T07:39:35Z,https://github.com/iflytek/skillhub/pull/1025
+XHToken/Spark-plugin,11,[Spec Decode][Spark2.5] Support DSpark,2026-10-29T03:32:56Z,https://github.com/XHToken/Spark-plugin/pull/11
+iflytek/astron-agent,1733,refactor(agent): replace custom execution engine with Deep Agents,2026-10-28T02:24:54Z,https://github.com/iflytek/astron-agent/pull/1733
+XHToken/llama.cpp,17,cuda : optimize Spark F16 and Q8 decode attention,2026-10-27T14:48:39Z,https://github.com/XHToken/llama.cpp/pull/17
+XHToken/llama.cpp,16,cuda : fuse Spark single-token decode subgraphs,2026-10-27T14:48:11Z,https://github.com/XHToken/llama.cpp/pull/16
+XHToken/magpie,16,fix: 本地模型进度推送、下载回退与已安装服务接续（beta.8）,2026-10-27T13:52:06Z,https://github.com/XHToken/magpie/pull/16
+XHToken/llama.cpp,15,cuda : optimize Spark Q4/Q6/Q8 decode kernels,2026-10-27T14:21:37Z,https://github.com/XHToken/llama.cpp/pull/15
+XHToken/llama.cpp,14,sampling : add token-only backend sampling outputs,2026-10-27T12:58:44Z,https://github.com/XHToken/llama.cpp/pull/14
+XHToken/llama.cpp,13,cuda : fuse CDF sampling and top-p mask operations,2026-10-27T12:47:47Z,https://github.com/XHToken/llama.cpp/pull/13
+XHToken/llama.cpp,12,kv-cache : support separate cache types for SWA layers,2026-10-27T12:44:18Z,https://github.com/XHToken/llama.cpp/pull/12
+XHToken/llama.cpp,11,kv-cache : optimize single-token attention mask construction,2026-10-27T12:38:23Z,https://github.com/XHToken/llama.cpp/pull/11
+XHToken/Spark-MLX-LLM,11,feat: expand Spark inference APIs and optimized MLX operators,2026-10-27T12:18:43Z,https://github.com/XHToken/Spark-MLX-LLM/pull/11
+XHToken/llama.cpp,10,cuda:optimize scalar GET_ROWS gathers,2026-10-27T10:15:58Z,https://github.com/XHToken/llama.cpp/pull/10
+XHToken/magpie,15,fix(product): 端云协同界面对齐与 Loomy 原生模型切换后重连（beta.7）,2026-10-27T10:20:56Z,https://github.com/XHToken/magpie/pull/15
+XHToken/magpie,14,test(local-model): align catalog fixtures and regression coverage,2026-10-27T06:06:57Z,https://github.com/XHToken/magpie/pull/14
+XHToken/magpie,13,feat: Spark X2.6 Q4/Q8、设备推荐策略与 Wefto beta.6,2026-10-27T05:20:41Z,https://github.com/XHToken/magpie/pull/13
+XHToken/magpie,12,fix(verification): 修正使用引导并完成 beta.5 发行验证,2026-10-26T11:44:22Z,https://github.com/XHToken/magpie/pull/12
+XHToken/magpie,11,feat(wefto): 更新模型显示名称与首次使用引导，发布 beta.5,2026-10-26T10:57:39Z,https://github.com/XHToken/magpie/pull/11
+XHToken/magpie,10,feat(wefto): 更新模型显示名称与首次使用引导，发布 beta.5,2026-10-26T10:47:47Z,https://github.com/XHToken/magpie/pull/10
+iflytek/skillhub,1024,chore(dsh): prepare npm release 0.5.0,2026-10-26T09:20:06Z,https://github.com/iflytek/skillhub/pull/1024
+iflytek/skillhub,1023,feat(dsh): add read-only skill availability diagnosis,2026-10-26T08:24:01Z,https://github.com/iflytek/skillhub/pull/1023
+iflytek/skillhub,1022,feat(suite): show related suites on skill cards,2026-10-26T08:40:14Z,https://github.com/iflytek/skillhub/pull/1022
+XHToken/magpie,9,Codex/unix startup packages,2026-10-26T06:41:27Z,https://github.com/XHToken/magpie/pull/9
+iflytek/skillhub,1021,feat(i18n): add Korean language support to the web client,2026-10-26T09:48:28Z,https://github.com/iflytek/skillhub/pull/1021
+iflytek/skillhub,1019,chore(release): prepare CLI 0.2.0 and DSH 0.4.0,2026-10-26T06:00:40Z,https://github.com/iflytek/skillhub/pull/1019
+XHToken/magpie,8,"feat(wefto): integrate runtime, host and usage updates",2026-10-26T05:43:24Z,https://github.com/XHToken/magpie/pull/8
+XHToken/llama.cpp,9,model : add DSpark draft support for Spark-X2.6,2026-10-26T03:57:39Z,https://github.com/XHToken/llama.cpp/pull/9
+iflytek/skillhub,1018,feat(dsh): manage installed skills in conversations with per-location versions,2026-10-26T03:18:39Z,https://github.com/iflytek/skillhub/pull/1018
+iflytek/skillhub,1017,fix(cli): preserve registry prefix for resolved downloads,2026-10-25T16:14:38Z,https://github.com/iflytek/skillhub/pull/1017
+iflytek/skillhub,1016,fix(web): keep self-hosted fonts within the deployment base path,2026-10-25T14:38:39Z,https://github.com/iflytek/skillhub/pull/1016
+iflytek/skillhub,1015,fix(ci): verify complete and fresh DeepWiki crawl results,2026-10-25T10:52:03Z,https://github.com/iflytek/skillhub/pull/1015
+iflytek/skillhub,1014,fix(release): patch dev dependency and live validation fixtures,2026-10-25T10:42:58Z,https://github.com/iflytek/skillhub/pull/1014
+XHToken/llama.cpp,8,model : add DSpark draft support for Spark-X2.6,2026-10-26T01:18:11Z,https://github.com/XHToken/llama.cpp/pull/8
+iflytek/skillhub,1013,fix(security): patch Go worker and Vitest tooling,2026-10-25T07:54:34Z,https://github.com/iflytek/skillhub/pull/1013
+iflytek/skillhub,1012,fix(ci): mirror runnable OCI images without unsupported referrers,2026-10-25T07:14:15Z,https://github.com/iflytek/skillhub/pull/1012
+iflytek/skillhub,1011,docs(weekly): publish 2026-W43 report,2026-10-25T06:45:11Z,https://github.com/iflytek/skillhub/pull/1011
+XHToken/dsh-intelligent-router,14,chore(deps): bump @deepseek-ai/schemastery from 3.18.4 to 3.18.5,2026-10-26T05:45:03Z,https://github.com/XHToken/dsh-intelligent-router/pull/14
+XHToken/dsh-intelligent-router,13,chore(deps): bump eslint from 10.12.0 to 10.13.0,2026-10-26T07:20:38Z,https://github.com/XHToken/dsh-intelligent-router/pull/13
+XHToken/dsh-intelligent-router,12,chore(deps): bump tsup from 8.5.1 to 9.0.0,2026-10-26T07:20:53Z,https://github.com/XHToken/dsh-intelligent-router/pull/12
+XHToken/dsh-intelligent-router,11,"chore(deps): bump react, react-dom and @types/react",2026-10-26T05:44:19Z,https://github.com/XHToken/dsh-intelligent-router/pull/11
+XHToken/dsh-intelligent-router,10,chore(deps): bump the vitest group across 1 directory with 2 updates,2026-10-26T08:05:13Z,https://github.com/XHToken/dsh-intelligent-router/pull/10
+XHToken/dsh-intelligent-router,9,chore(deps): bump the typescript-eslint group with 2 updates,2026-10-26T05:43:42Z,https://github.com/XHToken/dsh-intelligent-router/pull/9
+XHToken/dsh-intelligent-router,8,chore(ci): bump actions/upload-artifact from 4 to 7,2026-10-26T05:43:14Z,https://github.com/XHToken/dsh-intelligent-router/pull/8
+iflytek/astron-agent,1731,fix(ci): resolve agent SDK types from locked dependencies,2026-10-23T06:53:51Z,https://github.com/iflytek/astron-agent/pull/1731
+iflytek/astron-agent,1730,refactor(agent): split harness stream and tool result handling,2026-10-23T01:42:40Z,https://github.com/iflytek/astron-agent/pull/1730
+iflytek/skillhub,1010,feat(web): add passive semantic analytics attributes across frontend workflows,2026-10-29T06:56:59Z,https://github.com/iflytek/skillhub/pull/1010
+iflytek/skillhub,1008,docs(spec): propose versioned Knowledge package classification,2026-10-23T03:17:36Z,https://github.com/iflytek/skillhub/pull/1008
+iflytek/iFly-Skills,124,feat(coze): complete self-hosted deployment and console publishing workflow,2026-10-28T02:02:47Z,https://github.com/iflytek/iFly-Skills/pull/124
+iflytek/skillhub,1007,feat(dsh): 支持技能专属案例与原生对话使用,2026-10-22T11:51:26Z,https://github.com/iflytek/skillhub/pull/1007
+iflytek/astron-agent,1729,fix(workflow): preserve native Agent tool result payloads,2026-10-22T07:49:52Z,https://github.com/iflytek/astron-agent/pull/1729
+iflytek/astron-rpa,904,feat(n8n): 新增 Office 文件、桌面 UI 和 AI 动态风险工作流支持,2026-10-26T02:13:12Z,https://github.com/iflytek/astron-rpa/pull/904
+iflytek/skillhub,1006,fix(deps): patch Vite vulnerabilities in web and docs,2026-10-23T03:15:50Z,https://github.com/iflytek/skillhub/pull/1006
+iflytek/astron-rpa,903,Add automated Windows desktop release workflow,2026-10-22T05:49:20Z,https://github.com/iflytek/astron-rpa/pull/903
+iflytek/astron-agent,1728,fix(deploy): pin Debian nginx for legacy host compatibility,2026-10-22T02:22:18Z,https://github.com/iflytek/astron-agent/pull/1728
+iflytek/iFly-Skills,123,feat(coze): export validated OpenAPI 3.0.3 schemas for all 11 skills,2026-10-22T09:14:09Z,https://github.com/iflytek/iFly-Skills/pull/123
+iflytek/astron-agent,1727,fix(deploy): remove local Casdoor password helper services,2026-10-21T09:39:24Z,https://github.com/iflytek/astron-agent/pull/1727
+iflytek/astron-agent,1726,refactor(agent): replace custom execution engine with Deep Agents,2026-10-21T08:55:08Z,https://github.com/iflytek/astron-agent/pull/1726
+iflytek/skillhub,999,ci(db): warn about migration number collisions across open PRs,2026-10-21T10:22:26Z,https://github.com/iflytek/skillhub/pull/999
+XHToken/magpie,7,fix(storage): coordinate Windows file reads and replacement across processes,2026-10-21T08:21:56Z,https://github.com/XHToken/magpie/pull/7
+XHToken/magpie,6,docs: 移除 README 中的旧版升级章节,2026-10-21T08:06:12Z,https://github.com/XHToken/magpie/pull/6
+iflytek/skillhub,997,docs(dsh): record 0.3.1 publication and acceptance,2026-10-21T10:21:33Z,https://github.com/iflytek/skillhub/pull/997
+iflytek/skillhub,996,feat(storage): add S3-compatible deployment options,2026-10-21T08:07:06Z,https://github.com/iflytek/skillhub/pull/996
+iflytek/skillhub,995,chore(dsh): prepare 0.3.1 compatibility release,2026-10-21T06:31:50Z,https://github.com/iflytek/skillhub/pull/995
+iflytek/skillhub,992,fix(dev): align web toolchain with Node 22/24 LTS,2026-10-21T10:20:30Z,https://github.com/iflytek/skillhub/pull/992
+XHToken/magpie,5,fix: 修正 Windows 文件读写与跨平台页面回归,2026-10-21T07:36:05Z,https://github.com/XHToken/magpie/pull/5
+XHToken/magpie,4,fix(ci): 修复 Windows 路径身份与 macOS 原生回归环境,2026-10-21T03:36:34Z,https://github.com/XHToken/magpie/pull/4
+iflytek/astron-agent,1725,fix(frontend): clarify E2B sandbox enabled switch,2026-10-21T03:06:14Z,https://github.com/iflytek/astron-agent/pull/1725
+XHToken/magpie,3,ci: 添加 Wefto 三平台完整回归工作流,2026-10-21T02:55:36Z,https://github.com/XHToken/magpie/pull/3
+XHToken/magpie,2,refactor(wefto): 将 API-router 更名为 Wefto 织流,2026-10-21T02:43:10Z,https://github.com/XHToken/magpie/pull/2
+XHToken/magpie,1,feat(api-router): 导入本地模型路由服务与 Windows 预览版,2026-10-21T01:25:13Z,https://github.com/XHToken/magpie/pull/1
+XHToken/Spark-MLX-LLM,10,"Add compiled Spark inference, W8A8 extension, and checkpoint conversion",2026-10-21T01:51:31Z,https://github.com/XHToken/Spark-MLX-LLM/pull/10
+iflytek/skillhub,988,fix(dsh): support verified Harness 0.2.1-rc.2 compatibility,2026-10-20T11:42:30Z,https://github.com/iflytek/skillhub/pull/988
+iflytek/skillhub,987,fix(ci): tolerate npm scanning before DSH availability,2026-10-20T08:00:40Z,https://github.com/iflytek/skillhub/pull/987
+iflytek/skillhub,986,feat(dsh): refine skill lifecycle and release 0.3.0,2026-10-20T07:18:24Z,https://github.com/iflytek/skillhub/pull/986
+iflytek/skillhub,985,feat(github-sync): import and continuously sync public GitHub skills,2026-10-20T12:47:36Z,https://github.com/iflytek/skillhub/pull/985
+iflytek/astron-rpa,902,fix: Update Secure Preferences handling to remove only specific exten…,2026-10-20T03:28:02Z,https://github.com/iflytek/astron-rpa/pull/902
+iflytek/skillhub,984,docs(namespace): clarify invitation recovery and delivery status,2026-10-20T09:03:02Z,https://github.com/iflytek/skillhub/pull/984
+iflytek/skillhub,983,fix(suite): support copying install commands over HTTP,2026-10-20T09:02:29Z,https://github.com/iflytek/skillhub/pull/983
+iflytek/skillhub,979,fix(dsh): default to the verified public SkillHub registry,2026-10-19T11:53:22Z,https://github.com/iflytek/skillhub/pull/979
+iflytek/skillhub,977,feat(dsh): show source-scoped installation status in search,2026-10-19T09:16:12Z,https://github.com/iflytek/skillhub/pull/977
+iflytek/skillhub,976,fix(ci): repair DeepWiki crawler dependency resolution,2026-10-19T09:08:49Z,https://github.com/iflytek/skillhub/pull/976
+iflytek/skillhub,975,fix(auth): keep removed skill owners read-only,2026-10-20T02:32:35Z,https://github.com/iflytek/skillhub/pull/975
+iflytek/skillhub,973,fix(dsh): tolerate npm metadata cache after publishing,2026-10-19T07:13:58Z,https://github.com/iflytek/skillhub/pull/973
+iflytek/skillhub,972,fix(web): preserve proxy authority in forwarded redirects,2026-10-19T07:23:30Z,https://github.com/iflytek/skillhub/pull/972
+iflytek/skillhub,971,chore(dsh): release native plugin 0.1.1,2026-10-19T06:25:05Z,https://github.com/iflytek/skillhub/pull/971
+iflytek/skillhub,970,"fix(release): correct avatar security, missing routes and scan refresh",2026-10-19T05:53:41Z,https://github.com/iflytek/skillhub/pull/970
+iflytek/skillhub,969,"fix(auth): bundle Keycloak, Auth0 and Okta login icons",2026-10-20T09:02:43Z,https://github.com/iflytek/skillhub/pull/969
+iflytek/skillhub,967,fix(dsh): support verified runtime patches and reconnect receipts,2026-10-19T05:40:55Z,https://github.com/iflytek/skillhub/pull/967
+iflytek/skillhub,966,docs(weekly): publish W42 partial preview,2026-10-16T09:29:56Z,https://github.com/iflytek/skillhub/pull/966
+iflytek/astron-rpa,900,chore: Migrate meta and tree data from the remote server to the local service.,2026-10-19T05:55:29Z,https://github.com/iflytek/astron-rpa/pull/900
+iflytek/astron-rpa,899,fix: improve chrome plugin check logic and add unit test,2026-10-16T02:54:44Z,https://github.com/iflytek/astron-rpa/pull/899
+iflytek/skillhub,965,feat(auth): allow API tokens to attach and detach skill labels,2026-10-16T07:16:02Z,https://github.com/iflytek/skillhub/pull/965
+iflytek/skillhub,963,feat(skill): change published skill visibility through review,2026-10-16T04:38:46Z,https://github.com/iflytek/skillhub/pull/963
+iflytek/skillhub,962,fix(lifecycle): clarify deletion of promoted skills,2026-10-16T04:38:17Z,https://github.com/iflytek/skillhub/pull/962
+iflytek/skillhub,961,fix(social): enforce skill access for stars and ratings,2026-10-16T04:37:48Z,https://github.com/iflytek/skillhub/pull/961
+iflytek/skillhub,960,docs(lifecycle): 对齐生命周期文档与已验证行为,2026-10-15T11:52:49Z,https://github.com/iflytek/skillhub/pull/960
+iflytek/skillhub,958,docs(workflow): 将工程 Skill 迁移为 Trellis 分层规范,2026-10-15T09:16:03Z,https://github.com/iflytek/skillhub/pull/958
+iflytek/skillhub,957,feat(publish): support version-consistent skill display names,2026-10-15T10:14:31Z,https://github.com/iflytek/skillhub/pull/957
+iflytek/skillhub,956,feat(dsh): add native SkillHub plugin for DeepSeek Harness,2026-10-16T11:22:27Z,https://github.com/iflytek/skillhub/pull/956
+iflytek/skillhub,953,fix(deps): resolve Dependabot alerts and upgrade mermaid to 12,2026-10-15T03:47:25Z,https://github.com/iflytek/skillhub/pull/953
+iflytek/skillhub,952,feat(frontend): refine shadcn UI foundations,2026-10-15T00:53:40Z,https://github.com/iflytek/skillhub/pull/952
+iflytek/iFly-Skills,116,feat(coze): implement runtime adapters for 11 skills,2026-10-22T01:36:13Z,https://github.com/iflytek/iFly-Skills/pull/116
+iflytek/iFly-Skills,115,"feat(coze): add file, task, and execution infrastructure",2026-10-14T08:43:22Z,https://github.com/iflytek/iFly-Skills/pull/115
+iflytek/skillhub,950,feat(publish): support metadata display names independent of skill slugs,2026-10-15T10:14:33Z,https://github.com/iflytek/skillhub/pull/950
+iflytek/skillhub,949,docs(review): explain promoted skill deletion,2026-10-15T03:48:07Z,https://github.com/iflytek/skillhub/pull/949
+iflytek/skillhub,947,feat(skill): add avatars and namespace invitations,2026-10-15T01:19:30Z,https://github.com/iflytek/skillhub/pull/947
+iflytek/skillhub,945,fix(helm): use fully qualified service DNS for the web upstream,2026-10-15T03:46:46Z,https://github.com/iflytek/skillhub/pull/945
+iflytek/skillhub,943,docs(links): replace machine-specific paths and fix broken links,2026-10-16T04:37:19Z,https://github.com/iflytek/skillhub/pull/943
+iflytek/skillhub,942,docs(contributing): document DCO sign-off and CLA requirements,2026-10-16T04:36:47Z,https://github.com/iflytek/skillhub/pull/942
+iflytek/skillhub,941,docs(deploy): preserve runtime configuration on retries,2026-10-16T07:43:37Z,https://github.com/iflytek/skillhub/pull/941
+iflytek/skillhub,939,fix(auth): keep initial grant rules out of SQL checks,2026-10-10T09:49:15Z,https://github.com/iflytek/skillhub/pull/939
+iflytek/skillhub,938,docs(weekly): publish W40-W41 report,2026-10-10T09:04:38Z,https://github.com/iflytek/skillhub/pull/938
+iflytek/astron-agent,1721,fix(docs): fix Makefile-readme link and use Chinese anchor in code-requirements-zh.md,2026-10-14T07:25:39Z,https://github.com/iflytek/astron-agent/pull/1721
+iflytek/skillhub,936,feat(auth): configure local sign-in and initial external roles,2026-10-10T09:00:34Z,https://github.com/iflytek/skillhub/pull/936
+iflytek/skillhub,935,"feat(authoring) (1/5): draft domain model, CRUD and structure-layer validation",2026-10-14T12:05:46Z,https://github.com/iflytek/skillhub/pull/935
+iflytek/iFly-Skills,113,feat(Coze): Add Coze integration foundation and user-facing documentation,2026-10-13T11:23:04Z,https://github.com/iflytek/iFly-Skills/pull/113
+iflytek/astron-agent,1717,fix(frontend): clarify E2B sandbox enabled switch,2026-10-10T01:55:40Z,https://github.com/iflytek/astron-agent/pull/1717
+iflytek/skillhub,933,feat(promotion): support global updates and revocation,2026-10-09T11:39:58Z,https://github.com/iflytek/skillhub/pull/933
+iflytek/astron-agent,1715,chore: remove autonomous release workflow from agent docs and ignore …,2026-10-09T08:12:15Z,https://github.com/iflytek/astron-agent/pull/1715
+iflytek/astron-agent,1714,chore: remove autonomous release workflow from agent docs and ignore …,2026-10-09T07:21:08Z,https://github.com/iflytek/astron-agent/pull/1714
+iflytek/iFly-Skills,112,feat(n8n): npm release checks,2026-10-13T11:23:23Z,https://github.com/iflytek/iFly-Skills/pull/112
+iflytek/dolphin-mcp-pilot,59,docs(tools): clarify descriptions of low-scoring MCP tools,2026-10-09T06:19:29Z,https://github.com/iflytek/dolphin-mcp-pilot/pull/59
+iflytek/dolphin-mcp-pilot,58,docs: add Glama score badge to README,2026-10-09T06:19:20Z,https://github.com/iflytek/dolphin-mcp-pilot/pull/58
+iflytek/astron-agent,1713,fix(frontend): enforce strict TypeScript checks and PR builds,2026-10-09T05:47:45Z,https://github.com/iflytek/astron-agent/pull/1713
+iflytek/astron-agent,1712,fix(security): prevent cross-space SQL injection in database DML exec…,2026-10-09T03:33:12Z,https://github.com/iflytek/astron-agent/pull/1712
+iflytek/astron-agent,1711,test(database): add type annotations to schema injection tests,2026-10-09T02:38:06Z,https://github.com/iflytek/astron-agent/pull/1711
+iflytek/astron-agent,1710,fix(security): remove sample signing keys and harden random prefixes,2026-10-09T05:47:08Z,https://github.com/iflytek/astron-agent/pull/1710
+iflytek/skillhub,931,feat(starter): activate triage-nda built-in skill,2026-10-09T02:34:33Z,https://github.com/iflytek/skillhub/pull/931
+iflytek/astron-agent,1708,fix(auth): migrate Casdoor passwords and gate public login,2026-10-09T05:46:24Z,https://github.com/iflytek/astron-agent/pull/1708
+iflytek/astron-rpa,897,docs: add contributing guide and security policy,2026-10-09T03:37:30Z,https://github.com/iflytek/astron-rpa/pull/897
+iflytek/astron-agent,1707,fix(security): prevent cross-space SQL injection in database DML execution,2026-10-08T10:30:34Z,https://github.com/iflytek/astron-agent/pull/1707
+iflytek/skillhub,927,fix(auth): require secondary approval before account merge,2026-10-08T08:35:07Z,https://github.com/iflytek/skillhub/pull/927
+iflytek/skillhub,925,fix(deploy): repoint MinIO runtime image to pgsty/silo,2026-10-08T07:20:01Z,https://github.com/iflytek/skillhub/pull/925
+iflytek/iFly-Skills,110,fix(n8n):fix the language specification of npm packages,2026-10-08T06:33:12Z,https://github.com/iflytek/iFly-Skills/pull/110
+iflytek/astron-agent,1706,docs: add Japanese translations for FAQ and Quick Start,2026-10-10T06:12:29Z,https://github.com/iflytek/astron-agent/pull/1706
+iflytek/astron-agent,1705,examples: add meeting-notes-organizer (chained two-LLM pipeline),2026-10-10T06:12:21Z,https://github.com/iflytek/astron-agent/pull/1705
+iflytek/astron-agent,1704,fix(docs): fix Makefile-readme link in branch-commit-standards.md,2026-10-10T06:12:11Z,https://github.com/iflytek/astron-agent/pull/1704
+iflytek/astron-agent,1702,fix(docs): fix Makefile-readme link in code-requirements.md,2026-10-10T06:12:01Z,https://github.com/iflytek/astron-agent/pull/1702
+iflytek/astron-agent,1701,fix(docs): fix console/frontend/CLAUDE.md link in docs/zh/PROJECT_MODULES.md,2026-10-10T06:11:52Z,https://github.com/iflytek/astron-agent/pull/1701
+iflytek/astron-agent,1700,fix(docs): fix relative links in docs/ja/README.md,2026-10-10T06:11:44Z,https://github.com/iflytek/astron-agent/pull/1700
+iflytek/astron-agent,1699,fix(docs): fix relative links in docs/zh/CONTRIBUTING.md,2026-10-10T06:11:36Z,https://github.com/iflytek/astron-agent/pull/1699
+iflytek/astron-rpa,887,Validate Bearer tokens in the gateway auth handler,2026-10-14T07:26:04Z,https://github.com/iflytek/astron-rpa/pull/887
+iflytek/skillhub,920,ci(reward): keep reward tags off Latest and out of git describe,2026-10-16T07:16:26Z,https://github.com/iflytek/skillhub/pull/920
+iflytek/astron-agent,1692,feat: Create workflow DSL files in the local agent via skills,2026-10-03T09:21:35Z,https://github.com/iflytek/astron-agent/pull/1692
+iflytek/astron-agent,1690,fix(docker): pin available MinIO distribution for builds,2026-10-02T14:37:17Z,https://github.com/iflytek/astron-agent/pull/1690
+iflytek/astron-agent,1689,fix(workflow): bind imported code nodes to execution user,2026-10-02T13:17:30Z,https://github.com/iflytek/astron-agent/pull/1689
+iflytek/skillhub,917,feat(cli): add zcode agent profile,2026-10-16T07:16:14Z,https://github.com/iflytek/skillhub/pull/917
+iflytek/skillhub,916,fix(triage): support level-2 issue headings,2026-10-08T09:38:58Z,https://github.com/iflytek/skillhub/pull/916
+iflytek/skillhub,913,feat(starter): add reviewed NDA triage skill,2026-10-09T01:42:48Z,https://github.com/iflytek/skillhub/pull/913
+iflytek/astron-agent,1688,fix(workflow): map Link client connection errors,2026-10-14T07:25:29Z,https://github.com/iflytek/astron-agent/pull/1688
+iflytek/iFly-Skills,103,ci: bump actions/setup-node from 6 to 7,2026-10-01T17:12:07Z,https://github.com/iflytek/iFly-Skills/pull/103
+iflytek/iFly-Skills,102,ci: bump actions/download-artifact from 5 to 8,2026-10-01T17:12:02Z,https://github.com/iflytek/iFly-Skills/pull/102
+iflytek/iFly-Skills,97,ci: bump actions/upload-artifact from 4 to 7,2026-10-01T17:11:58Z,https://github.com/iflytek/iFly-Skills/pull/97
+iflytek/astron-harness-tutorial,85,fix(doc-watch): keep change and capture-failure issues separate,2026-10-01T17:42:25Z,https://github.com/iflytek/astron-harness-tutorial/pull/85
+iflytek/skillhub,909,feat(builtin-skills): add adversarial-review curated package,2026-10-15T16:46:32Z,https://github.com/iflytek/skillhub/pull/909
+iflytek/dolphin-mcp-pilot,57,chore: add glama.json to claim the Glama server listing,2026-10-09T01:51:52Z,https://github.com/iflytek/dolphin-mcp-pilot/pull/57
+iflytek/skillhub,908,docs(readme): refresh architecture diagram,2026-10-09T07:17:15Z,https://github.com/iflytek/skillhub/pull/908
+iflytek/skillhub,907,"docs(faq): add Kubernetes version, skill credentials and port conflict entries",2026-10-16T07:16:41Z,https://github.com/iflytek/skillhub/pull/907
+iflytek/astron-rpa,881,docs(faq): add SaaS-to-Cowork notice and client login 502/timeout entries,2026-10-08T02:21:10Z,https://github.com/iflytek/astron-rpa/pull/881
+iflytek/astron-rpa,880,feat(ai): add configurable semantic choice component,2026-10-14T07:25:45Z,https://github.com/iflytek/astron-rpa/pull/880
+iflytek/astron-rpa,879,feat(n8n):Improve the classification access and admission validation capabilities for browser reading and service connections,2026-10-22T05:44:25Z,https://github.com/iflytek/astron-rpa/pull/879
+iflytek/astron-harness-tutorial,81,docs(loomy): add mobile clipboard FAQ and refresh doc-watch baseline,2026-10-01T17:43:11Z,https://github.com/iflytek/astron-harness-tutorial/pull/81
+iflytek/astron-rpa,876,feat(n8n): Support for JSON and data-type workflow integration,2026-10-10T06:12:40Z,https://github.com/iflytek/astron-rpa/pull/876
+iflytek/astron-agent,1676,fix(security): apply outbound policy to MCP tool URLs,2026-10-14T07:24:53Z,https://github.com/iflytek/astron-agent/pull/1676
